@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="LoginPage2.css">
+   
+    <link rel="stylesheet" href="ADMIN.css">
+  
+  
+    <title>Rating</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">D-ECOMM</h1>
+            <nav>
+                <ul>
+                    <li> <a href="AddBalance.html">Add balance</a></li>
+                    <li> <a href="Consumer1.html">view Products</a></li>
+                    <li> <a href="Buy_Products.html">Buy Products</a></li>
+                    <li><a href="Issues_At_Consumer_Side.html">Product Issues</a></li>
+                    <li><a href="Delivered.html">Product Delivered</a></li>
+                    <li> <a href="index.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-form card">
+                <h2>
+                   Give Rating
+                </h2>
+                 
+        <div class="form-control">
+    <input type="text" name="address" placeholder="Seller Unique address" id="Seller_UNQ" autocomplete="off" required>
+        </div>
+        <div class="form-control">
+ <input type="text" placeholder="Product_Name" id="pro_Name" required>
+        </div>
+        <div class="form-control">
+  <input type="text" placeholder="Pro_Id" id="pro_Id" required>
+        </div>
+        <div class="form-control">
+<input type="text" placeholder="Seller Rating" id="Seller_Rating" required>
+    </div>
+    <div class="form-control">
+        <input type="text" placeholder="Product Rating" id="Product_Rating" required>
+            </div>
+    <div class="form-control">
+    <button type="submit"  class="btn btn-primary" onclick="App.giveRating()">Give Rating </button>
+    </div>
+</div>
+        </div>
+    </section>
+ 
+    <script src="index.js"></script>
+</body>
+</html>

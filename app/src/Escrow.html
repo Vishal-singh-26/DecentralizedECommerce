@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginPage.css">
+    <link rel="stylesheet" href="LoginPage2.css">
+
+    <title>Decentralized-Ecommerce-Website</title>
+</head>
+<body>
+   
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Ecommerce-Beta-Dapp</h1>
+            <nav>
+                <ul>
+                   
+                    <li><a href="ADMIN_PAGE.html">Set Seller </a></li>
+                    <li><a href="Consumer.html">Set Consumer </a></li>
+                    <li><a href="index.html">Log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+   
+    <section class="showcase">
+        <div class="container grid">
+           
+
+            <div class="showcase-form card">
+                <h2>Set Escrow Account</h2>
+              
+                    <div class="form-control">
+                        <input type="text" name="address" id="S_address" placeholder=" Seller Unique-Address" autocomplete="off" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="address" id="C_address" placeholder="Consumer Unique Address" autocomplete="off" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="Amount" id="amtt" placeholder="initial_amount" autocomplete="off" required>
+                    </div>
+                 <div class="form-control">
+                  
+                    <button type="submit" value="Login" class="btn btn-primary" onclick="App.escrow()">Set Escrow Account</button>
+
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+ 
+    <section class="stats">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1">
+                Welcome to the Block-Chain Powered Ecommerce-Beta-Dapp
+   </div>
+    </section>
+  
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>Decentralized-Ecommerce-Website
+                </h1>
+                <p>Copyright &copy; 2022</p>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

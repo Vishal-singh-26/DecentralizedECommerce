@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Consumer.css">
+    <link rel="stylesheet" href="LoginPage2.css">
+    
+    <title>Consumer Registration</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">Decentralized-Ecommerce-Website</h1>
+            <nav>
+                <ul>
+                    <li> <a href="ADMIN_PAGE.html">Set Seller </a></li>
+                    <li> <a href="Escrow.html">Set Escrow Account </a></li>
+                    <li> <a href="index.html">Log out </a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-form card">
+                <h2>
+                     Set Consumer Details 
+                                    </h2>
+                 
+                                 <div class="form-control">
+                                        <input type="text" name="address" placeholder="Consumer Unique Address" id="vadd" autocomplete="off" required>
+                                          </div>
+        <div class="form-control">
+    <input type="text" placeholder="Consumer Name" id="cn" required>
+     </div>
+     <div class="form-control">
+  <input type="text" placeholder="Consumer Id" id="C_id" required>
+     </div>
+     <div class="form-control">
+   <input type="text" placeholder="physical address" id="ph_add" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="pin code" id="pin" required>
+     </div>
+   
+     <div class="form-control">
+ <input type="text" placeholder="State" id="stat" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="Country" id="count" required>
+     </div>
+     <div class="form-control">
+        <input type="text" placeholder="Account_Balance" id="Acc_b" required>
+            </div>
+            <div class="form-control">
+                <input type="text" placeholder="bank_Account" id="b_a" required>
+                    </div>
+     <div class="form-control">
+     <button type="submit" value="Set Consumer Details" class="btn btn-primary" onclick="App.setConsumer1()"> Set Consumer</button>
+     </div>
+ </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

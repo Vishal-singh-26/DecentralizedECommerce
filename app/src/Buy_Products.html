@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Consumer.css">
+    <link rel="stylesheet" href="LoginPage2.css">
+    
+    <title>Buy Products</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">D-ECOMM</h1>
+            <nav>
+                <ul>
+                    <li> <a href="AddBalance.html">Add Balance</a></li>
+                    <li> <a href="Consumer1.html">View Products </a></li>
+                    <li> <a href="Feedback.html">Give Rating</a></li>
+                    <li><a href="Issues_At_Consumer_Side.html">Product Issues</a></li>
+                    <li><a href="Delivered.html">Product Delivered</a></li>
+                    <li> <a href="index.html">Log out </a></li>
+
+
+            
+                   
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-form card">
+                <h2>
+                    BUY Products
+                                    </h2>
+                                   
+                                 <div class="form-control">
+                                        <input type="text" name="address" placeholder="Consumer Unique Address" id="c_ad" autocomplete="off" required>
+                                          </div> 
+                                          <div class="form-control">
+                                        <button type="submit" value=" Get Account balance " class="btn btn-primary" onclick="App.checkBal()">Get Account Balance</button>
+                                        </div>
+                                          <div class="form-control">
+                                            <input type="text" name="address" placeholder="Seller Unique Address" id="s_ad" autocomplete="off" required>
+                                              </div>
+        <div class="form-control">
+    <input type="text" placeholder="Seller Name" id="sn" required>
+     </div>
+     <div class="form-control">
+  <input type="text" placeholder="Product Name" id="pn" required>
+     </div>
+     <div class="form-control">
+   <input type="text" placeholder="Product id" id="p_id" required>
+     </div>
+     <div class="form-control">
+ <input type="text" placeholder="Product Price" id="pp" required>
+     </div>
+     <div class="form-control">
+        <button type="submit" value=" Get Escrow account Balance " class="btn btn-primary" onclick="App.checkEscrowBal()">Get Escrow Account Balance</button>
+        </div>
+     <div class="form-control">
+     <button type="submit" value="BUY Product" class="btn btn-primary" onclick="App.buy()">BUY</button>
+     </div>
+ </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

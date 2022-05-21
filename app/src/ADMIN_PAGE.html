@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="LoginPage2.css">
+   
+    <link rel="stylesheet" href="ADMIN.css">
+  
+  
+    <title>Registration</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">D-ECOMM</h1>
+            <nav>
+                <ul>
+                    
+                    <li> <a href="Consumer.html">Set Consumer</a></li>
+                    <li> <a href="Escrow.html">Set Escrow Account</a></li>
+                    <li> <a href="index.html">Log Out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="showcase">
+        <div class="container grid">
+            <div class="showcase-form card">
+                <h2>
+                     Set Seller
+                </h2>
+                 
+        <div class="form-control">
+    <input type="text" name="address" placeholder="Seller Unique address" id="Seller_UNQ" autocomplete="off" required>
+        </div>
+        <div class="form-control">
+ <input type="text" placeholder="Seller_Name" id="Sell_Name" required>
+        </div>
+        <div class="form-control">
+  <input type="text" placeholder="Seller_Id" id="Sell_Id" required>
+        </div>
+        <div class="form-control">
+<input type="text" placeholder="Seller_Bank_Account" id="Seller_Account" required>
+    </div>
+    <div class="form-control">
+    <button type="submit"  class="btn btn-primary" onclick="App.setSeller()">Set Seller </button>
+    </div>
+</div>
+        </div>
+    </section>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
